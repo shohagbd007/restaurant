@@ -1,0 +1,431 @@
+/* Base CSS */
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+
+a:focus {
+    outline: 0 solid;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+    font-family: 'Yeseva One', cursive;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Gentium Book Basic', serif;
+    font-size: 16px;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/* Remove Chrome Input Field's Unwanted Yellow Background Color */
+input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0px 1000px white inset !important; }
+
+/* CSS Starting From Here */
+.top-area {
+  position: relative; }
+
+.slide-bg-1 {
+  background: url(img/header-bg.jpg);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover; }
+
+.slide-bg-2 {
+  background: url(img/parallax-2.jpg);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover; }
+
+.header-area {
+  width: 100%;
+  z-index: 999;
+  top: 0; }
+
+.header-text h2 {
+  background: url(img/line_symbol.png);
+  color: #fff;
+  font-size: 70px;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  padding-bottom: 70px;
+  margin-bottom: 40px; }
+
+.header-text-area {
+  position: relative;
+  padding-top: 80px; }
+
+.mainmenu ul.nav.navbar-nav {
+  text-align: right;
+  float: none;
+  font-size: 20px; }
+
+.mainmenu ul.nav.navbar-nav li {
+  float: none;
+  display: inline-block;
+  position: relative; }
+
+.mainmenu ul.nav.navbar-nav li a {
+  color: #fff;
+  padding: 36px 15px; }
+
+.mainmenu ul.nav.navbar-nav li:hover a {
+  background: none; }
+
+.mainmenu ul.nav.navbar-nav li.active::before {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background: #C8C5BA;
+  height: 3px;
+  content: "";
+  left: 0; }
+
+.btn-filled {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  display: inline-block;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  margin: 0px 5px; }
+
+.btn-filled::after {
+  z-index: -1;
+  background: #1D2122;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  opacity: 0.8; }
+
+.btn-filled.yellow-color-btn::after {
+  background-color: #D2BA82; }
+
+.header-text {
+  padding: 100px 0; }
+
+.mainmenu {
+  position: relative;
+  padding-right: 80px; }
+
+.social-links {
+  position: absolute;
+  right: 0;
+  top: 32px; }
+
+.social-links a {
+  color: #DBB13D;
+  font-size: 20px;
+  display: inline-block;
+  padding-left: 5px; }
+
+.section-padding {
+  padding: 80px 0; }
+
+.section-title {
+  background: url(img/section-title-pattern.png) no-repeat scroll center bottom;
+  color: #cc9900;
+  padding-bottom: 35px;
+  margin-bottom: 20px;
+  text-align: center; }
+
+.about-text {
+  margin-top: 20px; }
+
+.author-photo {
+  margin-top: 80px; }
+
+.about-area {
+  background: url(img/symphony.png); }
+
+.ingredients-area {
+  position: relative; }
+
+.parallax-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-attachment: fixed; }
+
+.ingredients-bg {
+  background-image: url(img/new-parallax-bg1.jpg); }
+
+.ingredients-text {
+  z-index: 1;
+  position: relative;
+  color: #fff;
+  padding: 30px; }
+
+.ingredients-text::after, .testimonial-list::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  content: "";
+  z-index: -1;
+  opacity: 0.7; }
+
+.ingredients-text p {
+  margin-bottom: 30px; }
+
+.section-title.white-sec-title {
+  color: #fff;
+  background-image: url(img/section-title-pattern-white.png); }
+
+.food-menu-area {
+  background: url(img/symphony.png); }
+
+.single-food-menu-item h2 {
+  border-bottom: 1px solid;
+  color: #c09f2d;
+  font-size: 20px;
+  padding-bottom: 10px;
+  margin-bottom: 10px; }
+
+.single-food-menu-item h2 span {
+  float: right; }
+
+.single-food-menu-item h2 span {
+  float: right;
+  font-weight: 400; }
+
+.single-food-menu-item {
+  margin-bottom: 40px; }
+
+.single-food-menu-item.special {
+  border: 1px solid #d6bb6c;
+  padding: 10px;
+  position: relative; }
+
+.single-food-menu-item.special::before {
+  content: "Special";
+  text-transform: uppercase;
+  background: #d6bb6c;
+  position: absolute;
+  top: -23px;
+  right: -1px;
+  color: #fff;
+  font-size: 14px;
+  padding: 1px 5px; }
+
+.single-food-menu-item p {
+  margin: 0; }
+
+.testimonial-bg {
+  background-image: url(img/new-parallax-bg2.jpg); }
+
+.testimonial-area {
+  position: relative; }
+
+.testimonial-list {
+  color: #fff;
+  font-size: 25px;
+  position: relative;
+  z-index: 1;
+  padding: 50px; }
+
+.testimonial-list p.testimonial-author {
+  font-size: 18px;
+  margin-top: 30px; }
+
+#testimonial-carousel:before {
+  font-family: FontAwesome;
+  content: "\f10d";
+  position: absolute;
+  left: -30px;
+  top: -17px;
+  color: #9A9B9A;
+  font-size: 35px; }
+
+.contact-us-area {
+  background-image: url(img/symphony.png); }
+
+.contact-img img {
+  margin-left: 30px;
+  width: 245px; }
+
+.contact-form {
+  text-align: left;
+  margin-top: 30px; }
+
+.contact-form input[type="text"], .contact-form select {
+  width: 100%;
+  border: 1px solid #c89f2d;
+  padding: 5px;
+  margin-bottom: 15px; }
+
+.contact-form label {
+  color: #cc9900; }
+
+.contact-form button[type="submit"] {
+  background: #c9a131;
+  color: #fff;
+  border: none;
+  padding: 5px 30px;
+  width: 150px;
+  margin: 0 auto;
+  display: block; }
+
+.footer-area {
+  background: #191919;
+  color: #bfbfbf;
+  padding: 50px 0;
+  font-size: 15px; }
+
+.footer-area .section-title {
+  font-size: 20px;
+  color: #fff;
+  background-image: url(img/section-title-pattern-little.png); }
+
+.footer-area strong {
+  color: #fff; }
+
+.footer-cards {
+  color: #fff;
+  margin-top: 20px; }
+
+.footer-cards i {
+  margin: 0 2px; }
+
+.footer-social-icon a {
+  font-size: 20px;
+  color: #fff;
+  display: inline-block;
+  padding: 0 3px; }
+
+.header-area {
+  width: 100%;
+  z-index: 999;
+  position: relative; }
+
+.is-sticky .header-area:after {
+  background: #000;
+  opacity: 0.8;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  z-index: -1;
+}
+
+.is-sticky .logo img {
+  height: 65px;
+  width: auto;
+  padding: 10px 0; }
+
+.is-sticky .mainmenu ul.nav.navbar-nav li a {
+  padding: 22px 15px; }
+
+.is-sticky .social-links {
+  top: 18px; }
+
+.header-area:after, .logo img, .mainmenu ul.nav.navbar-nav li a, .social-links {
+  -webkit-transition: .4s;
+  -o-transition: .4s;
+  transition: .4s; }
+
+.logo img {
+  height: 90px; }
+
+.mainmenu ul.nav.navbar-nav li a:focus {
+  background: none; }
+
+.is-sticky .mainmenu ul.nav.navbar-nav li.active a {
+  color: #cc9900; }
+
+.sticky-wrapper {
+  width: 100%;
+  z-index: 999;
+  top: 0;
+  position: absolute; }
+
+.slide-control {
+  position: absolute;
+  top: 50%;
+  color: #fff;
+  font-size: 80px;
+  margin-top: -70px;
+  left: 30px;
+  opacity: 0.2; }
+
+.right.slide-control {
+  left: auto;
+  right: 30px; }
+
+.slide-control:hover {
+  opacity: 1;
+  color: #fff; }
+
+/* Fade Carousel */
+#top-slide-carousel.carousel-fade .carousel-inner .item {
+  -webkit-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity; }
+
+#top-slide-carousel.carousel-fade .carousel-inner .item,
+#top-slide-carousel.carousel-fade .carousel-inner .active.left,
+#top-slide-carousel.carousel-fade .carousel-inner .active.right {
+  opacity: 0; }
+
+#top-slide-carousel.carousel-fade .carousel-inner .active,
+#top-slide-carousel.carousel-fade .carousel-inner .next.left,
+#top-slide-carousel.carousel-fade .carousel-inner .prev.right {
+  opacity: 1; }
+
+#top-slide-carousel.carousel-fade .carousel-inner .next,
+#top-slide-carousel.carousel-fade .carousel-inner .prev,
+#top-slide-carousel.carousel-fade .carousel-inner .active.left,
+#top-slide-carousel.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+
+#top-slide-carousel.carousel-fade .carousel-control {
+  z-index: 2; }
